@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <title>Donasi</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50" class="d-inline-block">&nbsp;&nbsp;Share4Lifes</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarNav" aria-controls="NavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 		 </button>
+
+        <div class="collapse navbar-collapse" id="NavbarNav">
+            <ul class="navbar-nav nav-pills mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="bantuan.html">BANTUAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="daftar.html">DAFTAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="masuk.html">MASUK</a>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Content Donasi -->
+    <section class="donasi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-3">
+                    <h1>DONASI</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/orangutan.jpg" width="300px" alt="Orangutan" style="border-radius: 20px;">
+                </div>
+                <div class="col-md-8">
+                    <h5>Orangutan</h5>
+                    <br>
+                    <p>Orangutan di Indonesia terancam punah. Pemburu liar memburu orangutan di hutan-hutan terutama di Pulau Kalimantan. Untuk mencegah kepunahan orangutan, banyak lembaga konservasi didirikan. Namun, banyak kendala yang mereka hadapi terutama
+                        kendala finansial. Mari kita bantu berdonasi untuk lembaga konservasi orangutan</p>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3>Rp40.000.000</h3>
+                            <p>Terkumpul dari Rp100.000.000</p>
+                            <span class="progress w-100" style="height:10px;">
+								<span class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:40%;" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="100"></span>
+                            </span>
+                            <p>40% tercapai</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span>Batas Waktu</span>
+                            <span class="btn btn-danger" id="time"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-success" data-toggle="modal" data-target=".inputdonasi">DONASI</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-info" data-toggle="modal" data-target=".modalsosmed"><img src="images/bagi.png" width="20px">&nbsp;BAGIKAN</button>
+
+                        </div>
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-info" onclick="document.getElementById('like').src='images/likefull.png'"><img src="images/like.png" width="20px" id="like">&nbsp;SUKA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 py-4" style="background-color:#eee;">
+                <div class="col-md-4">
+                    <img src="images/anoa.jpg" width="300px" alt="Anoa" style="border-radius: 20px;">
+                </div>
+                <div class="col-md-8">
+                    <h5>Anoa</h5>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h3>Rp10.000.000</h3>
+                            <p>Terkumpul dari Rp40.000.000</p>
+                            <span class="progress w-100" style="height:10px;">
+								<span class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:40%;" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100"></span>
+                            </span>
+                            <p>25% tercapai</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span>Batas Waktu</span>
+                            <span class="btn btn-danger" id="time1"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-success" data-toggle="modal" data-target=".inputdonasi">DONASI</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-info" data-toggle="modal" data-target=".modalsosmed"><img src="images/bagi.png" width="20px">&nbsp;BAGIKAN</button>
+
+                        </div>
+                        <div class="col-md-2">
+                            <button class="tombol1 btn btn-info" onclick="document.getElementById('like1').src='images/likefull.png'"><img src="images/like.png" width="20px" id="like1">&nbsp;SUKA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content Donasi End-->
+
+    <!-- Pagination -->
+    <nav class="pagebutton">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">&Lang;</a>
+            </li>
+            <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">&Rang;</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- pagination end -->
+
+    <!--Footer-->
+    <footer class="py-5 mt-5 bg-dark text-muted" height:auto; width:100%; ">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-md-4 ">
+				<img src="images/logo.png " width="50px "><br>
+				<cite style="color:white; font-size:9pt; ">"Berbagi untuk Hidup<br>Hidup untuk Berbagi"</cite>
+        <ul>
+            <li style="font-size:8pt"><a href="galeri.html">GALERI</a></li>
+            <li style="font-size:8pt"><a href="artikel.html">ARTIKEL</a></li>
+            <li style="font-size:8pt"><a href="Tentang kami.html">TENTANG KAMI</a></li>
+        </ul>
+        </div>
+
+        <div class="col-md-4">
+            <span>IKUTI KAMI</span><br>
+            <img src="images/ig.png" width="40px">
+            <a href="">@Share4Lifes</a><br>
+            <img src="images/tw.png" width="40px">
+            <a href="">@Share4Lifes</a><br>
+            <img src="images/fb.png" width="40px">
+            <a href="">Share4Lifes</a><br>
+        </div>
+
+        <div class="col-md-4">
+            <span>KONTAK</span><br>
+            <a href=""><img src="images/mail.png" width="40px">share4lifes@gmail.com</a><br>
+            <a href=""><img src="images/cell.png" width="40px">+62 811 222 333</a><br>
+            <a href=""><img src="images/fax.png" width="40px">+62 811 222 333</a><br>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; Hak Cipta 2018 | Dibuat oleh Creforcha</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Modal Donasi-->
+    <div class="inputdonasi modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">FORM DONASI</h6>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+
+                </div>
+                <!-- BODY MODAL-->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="form-group row">
+                            <div class="input-group-prepend col-md-12">
+                                <span class="input-group-text">Rp</span>
+                                <input class="form-control" type="number" name="nominal" placeholder="Masukan nominal yang ingin Anda donasikan" min="1">
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light m-1"><img src="images/bri.png" width="40px"></button>
+                            <button type="button" class="btn btn-light m-1"><img src="images/bni.png" width="40px"></button>
+                            <button type="button" class="btn btn-light m-1"><img src="images/mandiri.png" width="40px"></button>
+                            <button type="button" class="btn btn-light m-1"><img src="images/paypal.png" width="40px"></button>
+
+                            <button type="button" class="btn btn-sm btn-warning mx-1">Bank/Metode lain</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER MODAL -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="kirim()">KIRIM DONASI</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal donasi End -->
+
+    <!-- Modal -->
+    <div class="modal fade modalsosmed" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Pilih Sosial Media</h6>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <a href="https://twitter.com/" class="btn btn-primary m-2">TWITTER</a><br>
+                    <a href="https://www.facebook.com/" class="btn btn-primary m-2">FACEBOOK</a><br>
+                    <a href="https://www.instagram.com/" class="btn btn-primary m-2">INSTAGRAM</a><br>
+                    <a href="#" class="btn btn-info m-2">LAINNYA
+		        	</a>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+    <!-- JavaScript -->
+    <script>
+        function kirim() {
+            alert("Terimakasih atas bantuannya. Tetaplah berbagi kepada makhluk hidup lainnya!");
+        }
+    </script>
+    <script>
+        var countDownDate = new Date("Jan 22, 2019 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var hari = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var jam = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var menit = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var detik = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("time").innerHTML = hari + "hari " + jam + "jam " +
+                menit + "menit " + detik + "detik ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("time").innerHTML = "BERAKHIR";
+            }
+        }, 1000);
+    </script>
+    <script>
+        var countDownDate1 = new Date("feb 22, 2019 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x1 = setInterval(function() {
+
+            // Get todays date and time
+            var now1 = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance1 = countDownDate1 - now1;
+            // Time calculations for days, hours, minutes and seconds
+            var hari1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+            var jam1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var menit1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+            var detik1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("time1").innerHTML = hari1 + "hari " + jam1 + "jam " +
+                menit1 + "menit " + detik1 + "detik ";
+
+            // If the count down is over, write some text 
+            if (distance1 < 0) {
+                clearInterval(x1);
+                document.getElementById("time1").innerHTML = "BERAKHIR";
+            }
+        }, 1000);
+    </script>
+    <script src="styles/js/jquery-3.3.1.min.js"></script>
+    <script src="styles/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+/*Home*/
+.tombollain{
+
+	margin-left: 500px;
+	
+}
+
+.donasiTerbaru{
+}
+
+
+/*tentang Kami*/
+.about img{
+	display: block;
+	margin: auto;
+	width: 250px;
+}
+/*tentang Kami*/
+
+/*Bantuan*/
+section .help{
+	margin-left: 12.5%;
+	background-color: #eee;
+}
+
+#visi{
+	background-color: #8fc143;
+	margin-bottom: 20px;
+	padding:10px 20px;
+}
+
+#misi{
+	background-color: #8fc143;
+	margin-bottom:20px;
+	padding:10px 20px;
+}
+
+/*Bantuan end*/
+
+/*Profil*/
+	#tombolprofil{
+		margin: 10px;
+	}
+/*Profil End*/
+
+/*galeri*/
+.video-fluid {
+  width: 100%;
+  height: 190px;
+}
+/*galeri end*/
+
+/*Donasi*/
+@media only screen and (max-width: 600px) {
+.tombol1{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+}
+
+.tombol1{
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+
+}
+.pagebutton{
+	margin-top: 20px;
+}
+.nextbutton{
+	margin-left: 400px;
+}

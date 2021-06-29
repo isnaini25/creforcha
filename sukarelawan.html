@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+    <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <title>Form Sukarewalan</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="50" class="d-inline-block">&nbsp;&nbsp;Share4Lifes</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarNav" aria-controls="NavbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   			 <span class="navbar-toggler-icon"></span>
+ 		 </button>
+
+        <div class="collapse navbar-collapse" id="NavbarNav">
+            <ul class="navbar-nav nav-pills mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="bantuan.html">BANTUAN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="daftar.html">DAFTAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link" href="masuk.html">MASUK</a>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Cari" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Form Sukarelawan -->
+    <section class="form py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center">FORM PENDAFTARAN <br> SUKARELAWAN</h1>
+                    <hr>
+                </div>
+            </div>
+            <form method="post" action="profil.html">
+                <div class="form-group row ml-5">
+                    <fieldset>
+                        <legend>Data Diri</legend>
+                        <!-- Nama -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="namalengkap">Nama</label>
+                            <div class="col-md-9">
+                                <input type="text" name="namalengkap" id="namalengkap" class="form-control" placeholder="Masukan nama lengkap" required>
+                            </div>
+                        </div>
+                        <!-- Gender -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="gender">Jenis kelamin </label>
+                            <div class="col-md-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="pria" value="pria" checked>
+                                    <label class="form-check-label" for="pria">Pria</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="wanita" value="wanita">
+                                    <label class="form-check-label" for="wanita">Wanita</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tempat Lahir -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="Tempat">Tempat Lahir </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" name="tempatlahir" id="tempatlahir" placeholder="Masukan tempat lahir">
+                            </div>
+                        </div>
+                        <!-- Tanggal Lahir -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="tanggal ahir">Tanggal lahir </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="date" name="tgl_lhr" id="tgl_lhr">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="email">Email </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Masukan email" required>
+                            </div>
+                        </div>
+                        <!-- Telepon -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="no telp">No telp </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="cel" name="telp" id="telp" placeholder="Masukan nomor telepon" required>
+                            </div>
+                        </div>
+                        <!-- Alamat -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="alamat">Alamat </label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" name="alamat" id="alamat" cols="50" rows="5" placeholder="Masukan alamat lengkap"></textarea>
+                            </div>
+                        </div>
+                        <!-- Riwayat penyakit -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="penyakit">Riwayat Penyakit </label>
+                            <div class="col-md-9">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Maag">
+                                    <label class="form-check-label" for="Maag">Maag
+							  	</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="asma">
+                                    <label class="form-check-label" for="asma">Asma
+							  	</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="vertigo">
+                                    <label class="form-check-label" for="vertigo">Vertigo
+							  	</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="penyakitlain">
+                                    <label class="form-check-label" for="penyakitlain">Penyakit lainnya</label> <input class="form-control mt-1" type="text" name="penyakitlain" placeholder="tuliskan..">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Alasan -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="alasan">Alasan </label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" name="alamat" id="alamat" cols="50" rows="5" placeholder="Tuliskan alasan Anda ingin menjadi relawan..."></textarea>
+                            </div>
+                        </div>
+                        <!-- Input Foto -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="foto">Foto </label>
+                            <div class="col-md-9">
+                                <input class="form-control-file" type="file" name="foto" id="foto">
+                            </div>
+                        </div>
+                        <!-- Data pengguna-->
+                        <legend>Data Pengguna</legend>
+                        <!-- Nama ID -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="namalengkap">Nama ID </label>
+                            <div class="col-md-9 input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input class="form-control" type="text" name="namaId" id="namaId" size="50" placeholder="Masukan nama ID" required>
+                            </div>
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="password">Kata Sandi</label>
+                            <div class="col-md-9 input-group">
+                                <input class="form-control" type="password" name="password" id="password " size="50" required>
+                            </div>
+                        </div>
+                        <!-- Password Re-enter-->
+                        <div class="form-group row">
+                            <label class="col-md-3" for="ulangi">Ulangi Kata Sandi</label>
+                            <div class="col-md-9 input-group">
+                                <input class="form-control" type="password" name="password " id="password " size="50" required>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="syarat" value="syarat">
+                            <label class="form-check-label">Saya telah membaca dan menyetujui syarat dan ketentuan</label>
+                        </div>
+
+                        <!-- Submit&Reset -->
+                        <div style="margin:10px;">
+                            <input class="btn btn-primary" type="submit" name="kirim" id="kirim" value="kirim">
+                            <input class="btn btn-secondary" type="reset" name="reset" id="reset" value="reset">
+                        </div>
+            </form>
+            </fieldset>
+            </div>
+    </section>
+    <!-- Form end -->
+
+
+    <!--Footer-->
+    <footer class="py-5 bg-dark text-muted" style="margin-top: 2em; height:auto; width:100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img src="images/logo.png" width="50px"><br>
+                    <cite style="color:white; font-size:9pt;">"Berbagi untuk Hidup<br>Hidup untuk Berbagi"</cite>
+                    <ul>
+                        <li style="font-size:8pt"><a href="galeri.html">GALERI</a></li>
+                        <li style="font-size:8pt"><a href="artikel.html">ARTIKEL</a></li>
+                        <li style="font-size:8pt"><a href="Tentang kami.html">TENTANG KAMI</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <span>IKUTI KAMI</span><br>
+                    <img src="images/ig.png" width="40px">
+                    <a href="">@Share4Lifes</a><br>
+                    <img src="images/tw.png" width="40px">
+                    <a href="">@Share4Lifes</a><br>
+                    <img src="images/fb.png" width="40px">
+                    <a href="">Share4Lifes</a><br>
+                </div>
+
+                <div class="col-md-4">
+                    <span>KONTAK</span><br>
+                    <a href=""><img src="images/mail.png" width="40px">share4lifes@gmail.com</a><br>
+                    <a href=""><img src="images/cell.png" width="40px">+62 811 222 333</a><br>
+                    <a href=""><img src="images/fax.png" width="40px">+62 811 222 333</a><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; Hak Cipta 2018 | Dibuat oleh Creforcha</p>
+                </div>
+            </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Javascript -->
+    <script src="styles/js/jquery-3.3.1.min.js"></script>
+    <script src="styles/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
